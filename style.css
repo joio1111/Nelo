@@ -113,3 +113,26 @@ body.dark .filter {
   border-radius: 20px;
   font-size: 0.9rem;
 }
+
+.trend-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.trend-avatar {
+  font-size: 22px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.trend-meta {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}

@@ -74,14 +74,19 @@ body.dark .filter {
   background: #333;
   color: #eee;
 }
+eee;
+}
 .trend-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 1rem 1.5rem;
-  margin: 1rem auto;
-  max-width: 600px;
-  transition: transform 0.3s ease;
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 12px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
+}
+
+.trend-card:hover {
+  transform: scale(1.01);
 }
 
 .trend-card:hover {
@@ -116,14 +121,15 @@ body.dark .filter {
   margin-bottom: 0.5rem;
 }
 
-.score-badge {
-  background-color: #ffe600;
-  color: #000;
-  font-weight: bold;
+.viral-score {
+  font-weight: 600;
+  font-size: 15px;
+  color: #1f883d;
   display: inline-block;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  background: #e6f5eb;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
 .trend-card {

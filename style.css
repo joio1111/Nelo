@@ -77,29 +77,29 @@ body.dark .filter {
 eee;
 }
 .trend-card {
-  background-color: #fff;
-  border-radius: 14px;
-  padding: 18px 20px;
-  margin: 12px 0;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin: 16px 0;
   transition: transform 0.2s ease;
-}
-
-.trend-card:hover {
-  transform: scale(1.01);
 }
 
 .trend-card:hover {
   transform: translateY(-4px);
 }
 
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 0.5rem;
+.trend-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
+.trend-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
 .platform-icon {
   width: 24px;
   height: 24px;

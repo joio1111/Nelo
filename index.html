@@ -4,120 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nelo</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f7f7f8;
-      color: #111;
-    }
-
-    .dark-mode {
-      background-color: #121212;
-      color: #eee;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .header h1 {
-      font-size: 2rem;
-    }
-
-    .toggle-btn {
-      background: #333;
-      color: #fff;
-      padding: 8px 14px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    .filter-buttons {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .filter-buttons button {
-      background: #eee;
-      border: none;
-      border-radius: 14px;
-      padding: 6px 12px;
-      font-size: 0.85rem;
-      cursor: pointer;
-    }
-
-    .filter-buttons button.active {
-      background-color: #111;
-      color: #fff;
-    }
-
-    .trend-card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-      padding: 20px;
-      margin: 16px 0;
-      transition: transform 0.2s ease;
-    }
-
-    .trend-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .trend-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-
-    .trend-meta {
-      color: #666;
-      font-size: 0.9rem;
-      margin-bottom: 10px;
-    }
-
-    .score-badge {
-      background-color: #ffe600;
-      color: #000;
-      font-weight: bold;
-      display: inline-block;
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="header">
-    <h1>Nelo</h1>
-    <button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
-  </div>
+  <header class="app-header">
+    <img src="https://i.imgur.com/W0u5Fgo.png" alt="Nelo Logo" class="logo" />
+    <button class="theme-toggle">Toggle Theme</button>
+  </header>
 
-  <div class="filter-buttons">
-    <button class="active">All</button>
-    <button>TikTok</button>
-    <button>Twitter</button>
-    <button>Reddit</button>
-  </div>
+  <nav class="filter-tabs">
+    <button class="tab active">All</button>
+    <button class="tab">TikTok</button>
+    <button class="tab">Twitter</button>
+    <button class="tab">Reddit</button>
+  </nav>
 
-  <div class="trend-card">
-    <div class="trend-meta">@user123 • TikTok</div>
-    <div class="trend-title">“4-Minute Dive” Challenge</div>
-    <p>Going viral after Ashton claims to be mid-air for 4 minutes.</p>
-    <p><span class="score-badge">Viral Score: 92</span></p>
-  </div>
-
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
+  <main class="trend-card">
+    <div class="card-header">
+      <span class="platform">@user123 • TikTok</span>
+    </div>
+    <h2 class="trend-title">“4-Minute Dive” Challenge</h2>
+    <p class="trend-meta">Going viral after Ashton claims to be mid-air for 4 minutes.</p>
+    <div class="score-badge">Viral Score: <span id="score">92</span></div>
+  </main>
 </body>
 </html>

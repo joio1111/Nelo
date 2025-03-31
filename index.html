@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nelo</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
- <header>
-  <h1>Nelo</h1>
-  <button class="toggle-theme">Toggle Theme</button>
-</header>
-  <div class="filter-buttons">
-  <button class="filter-button active">All</button>
-  <button class="filter-button">TikTok</button>
-  <button class="filter-button">Twitter</button>
-  <button class="filter-button">Reddit</button>
-</div>
-  
-  <main id="trend-feed">
-  <div class="trend-card">
-  <div class="trend-meta">@user123 • TikTok</div>
-  <div class="trend-title">“4-Minute Dive” Challenge</div>
-  <p>Going viral after Ashton claims to be mid-air for 4 minutes.</p>
-  <span class="score-badge">🔥 Viral Score: 92</span>
-</div>
-</main>
+  <header class="header">
+    <h1 class="logo">Nelo</h1>
+    <button id="theme-toggle" class="toggle-button">Toggle Theme</button>
+  </header>
 
-  <script src="script.js"></script>
+  <nav class="filters">
+    <button class="filter active">All</button>
+    <button class="filter">TikTok</button>
+    <button class="filter">Twitter</button>
+    <button class="filter">Reddit</button>
+  </nav>
+
+  <main class="trend-feed">
+    <div class="trend-card">
+      <div class="card-header">
+        <span class="user-handle">@user123 • TikTok</span>
+      </div>
+      <h2 class="trend-title">“4-Minute Dive” Challenge</h2>
+      <p class="trend-description">Going viral after Ashton claims to be mid-air for 4 minutes.</p>
+      <div class="score-badge">🔥 Viral Score: 92</div>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
 </body>
 </html>

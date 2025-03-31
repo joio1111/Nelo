@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #111;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 1rem;
+}
+
+.filter {
+  padding: 8px 16px;
+  border: none;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter.active {
+  background: #000;
+  color: #fff;
+}
+
+.trend-card {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.score {
+  color: green;
+  font-weight: bold;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #111;
+  color: #eee;
+}
+
+body.dark .trend-card {
+  background: #1e1e1e;
+}
+
+body.dark .filter {
+  background: #333;
+  color: #eee;
+}

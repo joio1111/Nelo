@@ -1,130 +1,88 @@
-/* Base Styles */
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #111;
-  transition: background 0.3s, color 0.3s;
+  padding: 0;
+  background: #f7f8f9;
+  color: #222;
 }
 
-.dark-mode {
-  background-color: #111;
-  color: #f9f9f9;
-}
-
-/* Header */
-header {
+.app-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 24px;
-  background: #000;
-  color: white;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 1.8rem;
-}
-
-button#themeToggle {
-  background: #333;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button#themeToggle:hover {
-  background: #444;
-}
-
-/* Tabs */
-.tabs {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 20px auto;
-  padding: 0 16px;
-}
-
-.tabs button {
-  background: #e0e0e0;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background 0.2s;
-}
-
-.tabs button.active {
-  background: #000;
-  color: white;
-  font-weight: bold;
-}
-
-.dark-mode .tabs button {
-  background: #333;
-  color: #ccc;
-}
-
-.dark-mode .tabs button.active {
+  padding: 20px;
   background: #fff;
-  color: #000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* Trend Card Styles */
+.logo {
+  height: 40px;
+}
+
+.theme-toggle {
+  background: #222;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+.tab {
+  background: #eee;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #222;
+  color: #fff;
+}
+
 .trend-card {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  padding: 20px;
-  margin: 16px;
-  transition: transform 0.2s ease;
+  border-radius: 14px;
+  margin: 20px auto;
+  padding: 24px;
+  max-width: 90%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
-.trend-card:hover {
-  transform: translateY(-4px);
+.card-header {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 12px;
 }
 
-.dark-mode .trend-card {
-  background: #1e1e1e;
-  color: #f0f0f0;
-}
-
-/* Trend Details */
 .trend-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin: 0 0 10px;
 }
 
 .trend-meta {
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-}
-
-.dark-mode .trend-meta {
-  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #444;
 }
 
 .score-badge {
-  background-color: #ffe600;
+  background: #ffe600;
   color: #000;
   font-weight: bold;
   display: inline-block;
-  padding: 4px 10px;
+  padding: 6px 12px;
   border-radius: 20px;
-  font-size: 0.9rem;
-}
-
-.platform-icon {
-  width: 18px;
-  height: 18px;
-  vertical-align: middle;
-  margin-right: 6px;
+  font-size: 1rem;
 }

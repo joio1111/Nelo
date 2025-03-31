@@ -62,3 +62,54 @@ body.dark .filter {
   background: #333;
   color: #eee;
 }
+.trend-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+.trend-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.platform-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.source {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.trend-title {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.trend-description {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.score-badge {
+  background-color: #ffe600;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}

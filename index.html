@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nelo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Nelo</h1>
+    <button id="theme-toggle">🌓</button>
+  </header>
+
+  <nav>
+    <button class="filter active" data-platform="all">All</button>
+    <button class="filter" data-platform="tiktok">TikTok</button>
+    <button class="filter" data-platform="twitter">Twitter</button>
+    <button class="filter" data-platform="reddit">Reddit</button>
+  </nav>
+
+  <main id="trend-feed">
+    <div class="trend-card" data-platform="tiktok">
+      <h2>“4-Min Dive” Meme</h2>
+      <p>Going viral on TikTok — 87k mentions</p>
+      <span class="score">Viral Score: 92</span>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
